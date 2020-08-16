@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family:  Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.input-container1 {
+ 
+  display: flex;
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+
+.icon {
+  padding: 10px;
+  background: black;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: white;
+}
+
+.input-field:focus {
+  border: 6px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn1 {
+  background-color: dodgerblue
+  
+  ;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9 ;
+  alignment-baseline: last;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.btn1:hover {
+  opacity: 1;
+}
+
+
+</style>
+</head>
+<body style="background-color:hsla(168, 76%, 32%);">
+
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+  <h1 style="text-align:center">Register Form</h1>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+<div class="input-container">
+<i class="fa fa-calendar icon"></i>
+<input class="input-field" type="text" placeholder="Birthdate" name="birthday">
+</div>
+
+  <div class="input-container">
+    <i class="fa fa-address-book icon"></i>
+    <input class="input-field" type="text" placeholder="Address" name="address">
+    </div>
+    <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  <div class="input-container">
+
+    <i class="fa fa-flag icon" ></i>
+    
+  
+ <select class="input-field" name="Country" id="Country"> 
+       <option value="">Bangladesh</option>
+            <option value="">India</option>
+            <option value="">Nepal</option>
+             <option value="">Japan</option>
+            <option value="">Spain</option>
+            <option value="">France</option>
+  </select></div>
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+<div class="input-container1">
+  <button type="submit" class="btn">Register</button>
+  </div>
+    
+  <div class="input-container1">
+
+   <button type="reset"style="" class="btn1">Reset</button>
+   </div>
+</form>
+
+</body>
+</html>
